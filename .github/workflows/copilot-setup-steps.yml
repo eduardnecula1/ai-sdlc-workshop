@@ -39,3 +39,7 @@ jobs:
       - name: Install front-end dependencies
         working-directory: src/front
         run: npm ci
+
+      - name: Build the API
+        run: dotnet build MusicCatalog.slnx --no-restore
+
